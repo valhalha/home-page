@@ -1,0 +1,76 @@
+<html>
+    <style type="text/css">
+    .KONG
+    {
+        top:0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .bg
+    {
+        top:0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url(bg.png);
+        -webkit-filter: blur(4px);
+        background-size:cover;
+    }
+    .shadow
+    {
+        top:0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #000000;
+        
+        opacity: 0.5;
+    }
+    .words
+    {
+        position: fixed;
+        background: url(2.png);
+        background-size: cover;
+        top: 22%;
+        left:25%;
+        width: 50%;
+        height: 50%;
+        -webkit-filter:contrast(5);
+        cursor: pointer
+    }
+    .free
+    {
+        position: fixed;
+        color: #979797fa;
+        left:40%;
+        top:70px;
+        font-family:Prata;
+    }
+    
+    </style>
+<body>
+       
+     <div class="KONG">
+         <div class="bg"></div>
+         <div class="shadow">
+                <div class="free">
+                        <span style="font-size:20px">VIVA LA VIDA | LIFE DIRECTOR</span>
+                 </div>
+                
+         </div>
+         <div class="words"></div>
+     </div>
+     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <script type="text/javascript">
+     $(document).ready(function(){
+              $(".words").click(function(){
+                     $(".KONG").slideUp("slow");
+              });
+     });
+     </script>
+</body>
+</html>
