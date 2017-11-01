@@ -15,7 +15,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background-image: url(viva.jpg);
+        background-image: url(3.jpg);
         -webkit-filter: blur(4px);
         background-size:cover;
     }
@@ -68,9 +68,14 @@
      <script type="text/javascript">
      $(document).ready(function(){
               $(".words").click(function(){
-                     location.href = "http://blog.michaelgg.site"
+                     location.href="http://blog.michaelgg.site/";
               });
+              var random_bg=Math.floor(Math.random()*4+1);
+              var bg='url('+random_bg+'.jpg)';
+              $(".bg").css("background-image",bg);
+              
      });
      </script>
 </body>
 </html>
+
